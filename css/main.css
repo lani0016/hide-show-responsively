@@ -1,0 +1,66 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+img:nth-child(4),
+img:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    width: 49.4%;
+  }
+
+  img:nth-child(4),
+  img:nth-child(2){
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 33.9%;
+  }
+
+  img:first-child{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 70em) {
+
+
+  img {
+    width: 24.3%;
+  }
+
+  img:first-child {
+    margin-left: .8em;
+  }
+
+}
